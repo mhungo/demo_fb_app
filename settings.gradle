@@ -1,0 +1,42 @@
+/*pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}*/
+
+rootProject.name = "demo_fb_app"
+include ':app'
+include ':app_fb'
+include ':drag-sort-listview'
+include ':zip-amse'
+include ':AmbilWarna'
+include ':util'
+include ':android-filechooser'
+include ':SuperToasts'
+include ':text-formats'
+include ':app_fb'
+include ':api'
+include ':resources'
+include ':common'
+
+project(':app').projectDir = new File('app')
+project(':app_fb').projectDir = new File('app_fb')
+project(':api').projectDir = new File('api')
+project(':util').projectDir = new File('util')
+project(':common').projectDir = new File('common')
+project(':resources').projectDir = new File('resources')
+project(':text-formats').projectDir = new File('text-formats')
+project(':zip-amse').projectDir = new File('zip-amse')
+project(':drag-sort-listview').projectDir = new File('drag-sort-listview')
+project(':android-filechooser').projectDir = new File('android-filechooser')
+project(':SuperToasts').projectDir = new File('SuperToasts')
+project(':AmbilWarna').projectDir = new File('AmbilWarna')

@@ -1,0 +1,51 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:1:1-21:12
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:1:1-21:12
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:1:1-21:12
+	package
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:2:2-31
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:3:2-60
+application
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:5:2-20:16
+activity#org.geometerplus.zlibrary.ui.android.aplicatii.romanesti.error.BugReportActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:6:3-13:5
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:10:4-28
+	android:label
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:8:4-34
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:12:4-28
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:11:4-65
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:9:4-44
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:7:4-99
+activity#org.geometerplus.android.fbreader.dict.DictionaryNotInstalledActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:14:3-19:5
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:18:4-28
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:17:4-65
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:16:4-42
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:15:4-88
+uses-sdk
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml

@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml:8:1-60
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml:8:1-60
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml:8:1-60
+	package
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml:8:11-58
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml:8:1-60
+uses-sdk
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml

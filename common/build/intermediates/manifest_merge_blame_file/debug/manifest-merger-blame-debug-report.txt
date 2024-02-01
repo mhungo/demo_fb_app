@@ -1,0 +1,36 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.fbreader.common" >
+4
+5    <uses-sdk android:minSdkVersion="24" />
+5-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml
+6
+7    <application>
+7-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:5:2-20:16
+8        <activity
+8-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:6:3-13:5
+9            android:name="org.geometerplus.zlibrary.ui.android.aplicatii.romanesti.error.BugReportActivity"
+9-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:7:4-99
+10            android:configChanges="orientation|keyboardHidden|screenSize"
+10-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:11:4-65
+11            android:exported="false"
+11-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:12:4-28
+12            android:label="FBReader crash"
+12-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:8:4-34
+13            android:process=":crash"
+13-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:10:4-28
+14            android:theme="@style/FBReader.Activity" />
+14-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:9:4-44
+15        <activity
+15-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:14:3-19:5
+16            android:name="org.geometerplus.android.fbreader.dict.DictionaryNotInstalledActivity"
+16-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:15:4-88
+17            android:configChanges="orientation|keyboardHidden|screenSize"
+17-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:17:4-65
+18            android:exported="false"
+18-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:18:4-28
+19            android:theme="@style/FBReader.Dialog" />
+19-->C:\Users\it\Desktop\F_Source\demo_fb_app\common\src\main\AndroidManifest.xml:16:4-42
+20    </application>
+21
+22</manifest>

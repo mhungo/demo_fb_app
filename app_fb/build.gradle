@@ -1,0 +1,221 @@
+buildscript {
+	repositories {
+		jcenter()
+		mavenCentral()
+		google()
+	}
+}
+
+/*//Project Application*/
+/*apply plugin: 'com.android.application'*/
+
+/*//Convert to project library*/
+apply plugin: 'com.android.library'
+
+dependencies {
+    implementation project(':api')
+    api project(':util')
+    api project(':common')
+    api project(':resources')
+    api project(':text-formats')
+    api project(':drag-sort-listview')
+    api project(':android-filechooser')
+    api project(':SuperToasts')
+    api project(':AmbilWarna')
+    api project(':zip-amse')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0-beta01'
+    implementation('com.googlecode.json-simple:json-simple:1.1.1') {
+        exclude group: 'junit', module: 'junit'
+    }
+    implementation files('libs/nanohttpd-2.0.5.jar')
+    implementation files('libs/httpmime-4.2.5.jar')
+    implementation files('libs/pdfparse.jar')
+	implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+	implementation 'androidx.preference:preference:1.2.0'
+}
+
+android {
+	Properties prop = new Properties()
+	def propertiesFile = project.rootProject.file('local.properties')
+	if (propertiesFile.exists()) {
+		prop.load(propertiesFile.newDataInputStream())
+	}
+	signingConfigs {
+		release {
+			keyAlias 'epub'
+			storeFile file('C:\\Users\\it\\Desktop\\F_Source\\FBReader-Android-2\\keystore.jks')
+			keyPassword '123456'
+			storePassword '123456'
+		}
+	}
+}
+
+android {
+	compileSdkVersion project.ext.globalCompileSdkVersion
+	buildToolsVersion project.ext.globalBuildToolsVersion
+	useLibrary 'org.apache.http.legacy'
+
+	lintOptions {
+		abortOnError false
+	}
+
+    defaultConfig {
+        minSdkVersion project.ext.globalMinSdkVersion
+        // this will over-write the values in androidmanifest.xml
+        //maxSdkVersion project.ext.globalMaxSdkVersion
+        targetSdkVersion project.ext.globalTargetSdkVersion
+        versionCode 1 // this is to be set by code below
+        versionName new File("$projectDir/VERSION").text.trim()
+
+		multiDexEnabled true
+		//aplicatii.romanesti:
+		//multiDexEnabled project.ext.globalMultiDexEnabled
+
+        buildConfigField "String", "FBNETWORK_KEY", "${FBREADER_ORG_FBNETWORK_KEY}"
+        buildConfigField "String", "FBNETWORK_SECRET", "${FBREADER_ORG_FBNETWORK_SECRET}"
+        /*applicationId 'org.geometerplus.zlibrary.ui.android.aplicatii.romanesti'*/
+        signingConfig signingConfigs.release
+
+		externalNativeBuild { //parallel ndk builds; decrease the value or remove if dependency errors
+			ndkBuild {
+				arguments "-j6"
+			}
+		}
+    }
+
+	sourceSets {
+		main.aidl.srcDirs = ['src/main/java']
+		main.java.srcDirs = ['src/main/java']
+		main.res.srcDirs = ['src/main/res']
+		main.assets.srcDirs = ['src/main/assets']
+		//main.jniLibs.srcDirs = ['src/main/libs'] //https://stackoverflow.com/questions/44954122/more-than-one-file-was-found-with-os-independent-path-lib-x86-libusb-so
+		main.jni.srcDirs = []
+	}
+	buildTypes {
+		debug {
+			minifyEnabled false
+			debuggable true
+			versionNameSuffix '-DEBUG'
+            signingConfig signingConfigs.release
+		}
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+			signingConfig signingConfigs.release
+		}
+	}
+}
+
+android {
+	flavorDimensions 'abi'
+
+    productFlavors {
+        fat {
+            dimension 'abi'
+            ndk {
+                abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
+                // abiFilters 'x86', 'armeabi-v7a'
+                // , 'armeabi', 'mips'
+                versionCode 1
+            }
+            /*applicationId 'org.geometerplus.zlibrary.ui.android.aplicatii.romanesti'*/
+            signingConfig signingConfigs.release
+			// useAndroidX true
+        }
+        // // arm { //obsolete
+        // // 	dimension 'abi'
+        // // 	ndk {
+        // // 		abiFilter 'armeabi'
+        // // 		versionCode 2
+        // // 	}
+        // // }
+//		armv7a {
+//			dimension 'abi'
+//			ndk {
+//				abiFilter 'armeabi-v7a'
+//				versionCode 2
+//			}
+//		}
+        // arm64v8a {
+        // 	dimension 'abi'
+        // 	ndk {
+        // 		abiFilter 'arm64-v8a'
+        // 		versionCode 3
+        // 	}
+        // }
+        // x86 {
+        // 	dimension 'abi'
+        // 	ndk {
+        // 		abiFilter 'x86'
+        // 		versionCode 4
+        // 	}
+        // }
+        // x8664 {
+        // 	dimension 'abi'
+        // 	ndk {
+        // 		abiFilter 'x86_64'
+        // 		versionCode 5
+        // 	}
+        // }
+        // // mips { //obsolete
+        // // 	dimension 'abi'
+        // // 	ndk {
+        // // 		abiFilter 'mips'
+        // // 		versionCode 5
+        // // 	}
+        // // }
+    }
+
+	externalNativeBuild {
+		ndkBuild {
+			path 'src/main/jni/Android.mk'
+		}
+	}
+    // ndkVersion '21.0.6113669'
+	//ndkVersion '23.2.8568313' //'22.1.7171670'  //'25.2.9519653'
+	ndkVersion project.ext.globalNdkVersion
+
+//	task ndkBuild(type: Exec) {
+//		def ndkDir = project.android.ndkDirectory.absolutePath
+//		commandLine "$ndkDir/ndk-build.cmd", '-C', file('src/main/jni').absolutePath
+//	}
+//
+//	tasks.withType(JavaCompile) {
+//		compileTask -> compileTask.dependsOn ndkBuild
+//	}
+
+	clean {
+		delete 'src/main/obj'
+		delete 'src/main/libs'
+	}
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+/*android.applicationVariants.all { variant ->
+	def abiVersion = variant.productFlavors.get(0).versionCode
+
+	def baseCode = 0
+	def version = new File("$projectDir/VERSION").text.trim()
+	if (version.matches('\\d*\\.\\d* beta \\d*')) {
+		def parts = version.split('[ .]')
+		baseCode = parts[0].toInteger() * 1000000 + parts[1].toInteger() * 10000 - 5000 + parts[3].toInteger() * 100
+	} else if (version.matches('\\d*\\.\\d* rc \\d*')) {
+		def parts = version.split('[ .]')
+		baseCode = parts[0].toInteger() * 1000000 + parts[1].toInteger() * 10000 - 2500 + parts[3].toInteger() * 100
+	} else if (version.matches('\\d*\\.\\d*')) {
+		def parts = version.split('\\.')
+		baseCode = parts[0].toInteger() * 1000000 + parts[1].toInteger() * 10000
+	} else if (version.matches('\\d*\\.\\d*\\.\\d*')) {
+		def parts = version.split('\\.')
+		baseCode = parts[0].toInteger() * 1000000 + parts[1].toInteger() * 10000 + parts[2].toInteger() * 100
+	} else {
+		throw new IllegalArgumentException('Unsupported version format: ' + version)
+	}
+    variant.outputs.all { output ->
+        output.setVersionCodeOverride(baseCode + 10 + abiVersion)
+    }
+}*/

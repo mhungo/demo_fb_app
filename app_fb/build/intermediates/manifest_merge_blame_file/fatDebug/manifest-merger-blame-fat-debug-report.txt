@@ -1,0 +1,901 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.geometerplus.zlibrary.ui.android.aplicatii.romanesti"
+4    android:installLocation="auto" >
+5
+6    <uses-sdk android:minSdkVersion="24" />
+6-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml
+7    <!-- below is expected to be overwritten by the sdk vers in app.gradle -->
+8
+9    <supports-screens
+9-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:7:5-12:40
+10        android:anyDensity="true"
+10-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:8:9-34
+11        android:largeScreens="true"
+11-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:9:9-36
+12        android:normalScreens="true"
+12-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:10:9-37
+13        android:smallScreens="true"
+13-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:11:9-36
+14        android:xlargeScreens="true" />
+14-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:12:9-37
+15
+16    <uses-permission
+16-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:14:5-16:36
+17        android:name="android.permission.WAKE_LOCK"
+17-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:15:9-52
+18        android:required="false" />
+18-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:16:9-33
+19
+20    <application
+20-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:18:5-582:19
+21        android:name="org.geometerplus.android.fbreader.FBReaderApplication"
+21-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:19:9-77
+22        android:label="@string/app_name" >
+22-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:20:9-41
+23        <uses-library
+23-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:22:9-24:40
+24            android:name="org.apache.http.legacy"
+24-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:23:13-50
+25            android:required="false" />
+25-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:24:13-37
+26
+27        <activity
+27-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:26:9-39:20
+28            android:name="org.geometerplus.android.fbreader.error.BookReadingErrorActivity"
+28-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:27:13-92
+29            android:configChanges="orientation|keyboardHidden|screenSize"
+29-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:28:13-74
+30            android:exported="false"
+30-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:29:13-37
+31            android:process=":error"
+31-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:30:13-37
+32            android:theme="@style/FBReader.Dialog" >
+32-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:31:13-51
+33            <intent-filter>
+33-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:32:13-38:29
+34                <action android:name="android.fbreader.action.ERROR" />
+34-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:33:17-72
+34-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:33:25-69
+35
+36                <category android:name="android.intent.category.DEFAULT" />
+36-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+36-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+37
+38                <data android:scheme="BookReadingException" />
+38-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:17-63
+38-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:23-60
+39            </intent-filter>
+40        </activity>
+41        <activity
+41-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:40:9-53:20
+42            android:name="org.geometerplus.android.fbreader.crash.FixBooksDirectoryActivity"
+42-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:41:13-93
+43            android:configChanges="orientation|keyboardHidden|screenSize"
+43-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:42:13-74
+44            android:exported="false"
+44-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:43:13-37
+45            android:process=":crash"
+45-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:44:13-37
+46            android:theme="@style/FBReader.Dialog" >
+46-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:45:13-51
+47            <intent-filter>
+47-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:46:13-52:29
+48                <action android:name="android.fbreader.action.CRASH" />
+48-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:47:17-72
+48-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:47:25-69
+49
+50                <category android:name="android.intent.category.DEFAULT" />
+50-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+50-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+51
+52                <data android:scheme="CachedCharStorageException" />
+52-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:17-63
+52-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:23-60
+53            </intent-filter>
+54        </activity>
+55        <activity
+55-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:54:9-74:20
+56            android:name="org.geometerplus.android.fbreader.crash.MissingNativeLibraryActivity"
+56-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:55:13-96
+57            android:configChanges="orientation|keyboardHidden|screenSize"
+57-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:56:13-74
+58            android:exported="false"
+58-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:57:13-37
+59            android:process=":crash"
+59-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:58:13-37
+60            android:theme="@style/FBReader.Dialog" >
+60-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:59:13-51
+61            <intent-filter>
+61-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:60:13-66:29
+62                <action android:name="android.fbreader.action.CRASH" />
+62-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:47:17-72
+62-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:47:25-69
+63
+64                <category android:name="android.intent.category.DEFAULT" />
+64-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+64-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+65
+66                <data android:scheme="ExceptionInInitializerError" />
+66-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:17-63
+66-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:23-60
+67            </intent-filter>
+68            <intent-filter>
+68-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:67:13-73:29
+69                <action android:name="android.fbreader.action.CRASH" />
+69-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:47:17-72
+69-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:47:25-69
+70
+71                <category android:name="android.intent.category.DEFAULT" />
+71-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+71-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+72
+73                <data android:scheme="UnsatisfiedLinkError" />
+73-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:17-63
+73-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:23-60
+74            </intent-filter>
+75        </activity>
+76
+77        <service
+77-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:76:9-85:19
+78            android:name="org.geometerplus.android.fbreader.api.ApiService"
+78-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:77:13-76
+79            android:exported="false"
+79-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:78:13-37
+80            android:launchMode="singleTask" >
+80-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:79:13-44
+81            <intent-filter>
+81-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:80:13-84:29
+82                <action android:name="android.fbreader.action.API" />
+82-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:81:17-70
+82-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:81:25-67
+83
+84                <category android:name="android.intent.category.DEFAULT" />
+84-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+84-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+85            </intent-filter>
+86        </service>
+87
+88        <activity
+88-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:87:9-217:20
+89            android:name="org.geometerplus.android.fbreader.FBReader"
+89-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:88:13-70
+90            android:configChanges="orientation|keyboardHidden|screenSize"
+90-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:89:13-74
+91            android:exported="true"
+91-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:90:13-36
+92            android:icon="@drawable/fbreader"
+92-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:91:13-46
+93            android:label="@string/app_name"
+93-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:92:13-45
+94            android:launchMode="singleTask"
+94-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:93:13-44
+95            android:theme="@style/FBReader.Activity" > <!-- android:exported="false" 2023 test -->
+95-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:94:13-53
+96            <!-- android:exported="false" #cred ca e necesar pt google search... -->
+97            <!--
+98            <intent-filter>
+99                <action android:name="android.intent.action.MAIN" />
+100
+101                <category android:name="android.intent.category.LAUNCHER" />
+102            </intent-filter>
+103            -->
+104            <intent-filter>
+104-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:101:13-105:29
+105                <action android:name="android.fbreader.action.VIEW" />
+105-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:102:17-71
+105-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:102:25-68
+106
+107                <category android:name="android.intent.category.DEFAULT" />
+107-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+107-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+108            </intent-filter>
+109            <intent-filter>
+109-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:106:13-112:29
+110                <action android:name="anvdroid.fbreader.action.LOCAL_SEARCH_RESULT_VIEW" />
+110-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:107:17-92
+110-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:107:25-89
+111
+112                <category android:name="android.intent.category.DEFAULT" />
+112-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+112-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+113
+114                <data android:scheme="local-search-result" />
+114-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:17-63
+114-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:23-60
+115            </intent-filter>
+116            <!--
+117            intent-filter>
+118                <action android:name="android.fbreader.action.VIEW"/>
+119                <category android:name="android.intent.category.DEFAULT"/>
+120                <data android:scheme="file"/>
+121            </intent-filter
+122            -->
+123            <intent-filter>
+123-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:120:13-126:29
+124                <action android:name="android.intent.action.VIEW" />
+124-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:121:17-69
+124-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:121:25-66
+125
+126                <category android:name="android.intent.category.DEFAULT" />
+126-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+126-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+127
+128                <data android:scheme="fbreader-action" />
+128-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:17-63
+128-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:23-60
+129            </intent-filter>
+130            <intent-filter>
+130-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:127:13-131:29
+131                <action android:name="android.fbreader.action.PLUGIN" />
+131-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:128:17-73
+131-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:128:25-70
+132
+133                <category android:name="android.intent.category.DEFAULT" />
+133-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+133-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+134            </intent-filter>
+135            <!--
+136            (removed by aplicatii.romanesti)intent-filter>
+137                <action android:name="android.intent.action.VIEW"/>
+138                <category android:name="android.intent.category.DEFAULT"/>
+139                <data android:host="" android:scheme="file"/>
+140                <data android:pathPattern=".*\\.epub"/>
+141                <data android:pathPattern=".*\\.oeb"/>
+142                <data android:pathPattern=".*\\.fb2"/>
+143                <data android:pathPattern=".*\\.fb2\\.zip"/>
+144                <data android:pathPattern=".*\\.mobi"/>
+145                <data android:pathPattern=".*\\.prc"/>
+146                <data android:pathPattern=".*\\.txt"/>
+147                <data android:pathPattern=".*\\.rtf"/>
+148                <data android:pathPattern=".*\\.pdf"/>
+149                <data android:pathPattern=".*\\.djvu"/>
+150                <data android:pathPattern=".*\\.cbr"/>
+151                <data android:pathPattern=".*\\.cbz"/>
+152            </intent-filter
+153            -->
+154            <!--
+155            (removed by aplicatii.romanesti)intent-filter>
+156                <action android:name="android.intent.action.VIEW"/>
+157                <category android:name="android.intent.category.DEFAULT"/>
+158                <data android:host="" android:scheme="file" android:mimeType="text/plain"/>
+159                <data android:pathPattern=".*\\.epub"/>
+160                <data android:pathPattern=".*\\.oeb"/>
+161                <data android:pathPattern=".*\\.fb2"/>
+162                <data android:pathPattern=".*\\.mobi"/>
+163                <data android:pathPattern=".*\\.prc"/>
+164                <data android:pathPattern=".*\\.txt"/>
+165                <data android:pathPattern=".*\\.rtf"/>
+166                <data android:pathPattern=".*\\.pdf"/>
+167                <data android:pathPattern=".*\\.djvu"/>
+168                <data android:pathPattern=".*\\.cbr"/>
+169                <data android:pathPattern=".*\\.cbz"/>
+170            </intent-filter
+171            -->
+172            <!--
+173            intent-filter>
+174                <action android:name="android.intent.action.VIEW"/>
+175                <category android:name="android.intent.category.DEFAULT"/>
+176                <category android:name="android.intent.category.BROWSABLE"/>
+177                <data android:scheme="content" android:pathPattern=".*\\.fb2"/>
+178            </intent-filter
+179            -->
+180            <!--
+181            (removed by aplicatii.romanesti)intent-filter>
+182                <action android:name="android.intent.action.VIEW"/>
+183                <category android:name="android.intent.category.DEFAULT"/>
+184                <category android:name="android.intent.category.BROWSABLE"/>
+185                <data android:host="" android:scheme="file"/>
+186                <data android:mimeType="application/epub+zip"/>
+187                <data android:mimeType="application/x-pilot-prc"/>
+188                <data android:mimeType="application/x-mobipocket-ebook"/>
+189                <data android:mimeType="application/x-fictionbook+xml"/>
+190                <data android:mimeType="application/x-fictionbook"/>
+191                <data android:mimeType="application/pdf"/>
+192                <data android:mimeType="application/x-pdf"/>
+193                <data android:mimeType="application/djvu"/>
+194                <data android:mimeType="application/x-djvu"/>
+195                <data android:mimeType="application/x-cbr"/>
+196                <data android:mimeType="application/x-cbz"/>
+197                <data android:mimeType="image/vnd.djvu"/>
+198                <data android:mimeType="image/x-djvu"/>
+199                <data android:mimeType="text/plain"/>
+200            </intent-filter
+201            -->
+202            <intent-filter>
+202-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:199:13-201:29
+203                <action android:name="android.intent.action.SEARCH" />
+203-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:200:17-71
+203-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:200:25-68
+204            </intent-filter>
+205
+206            <meta-data
+206-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:203:13-205:54
+207                android:name="android.app.searchable"
+207-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:204:17-54
+208                android:resource="@xml/searchable" />
+208-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:205:17-51
+209
+210            <intent-filter>
+210-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:207:13-211:29
+211                <action android:name="android.fbreader.action.CLOSE" />
+211-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:208:17-72
+211-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:208:25-69
+212
+213                <category android:name="android.intent.category.DEFAULT" />
+213-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+213-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+214            </intent-filter>
+215            <intent-filter>
+215-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:212:13-216:29
+216                <action android:name="android.fbreader.action.PLUGIN_CRASH" />
+216-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:213:17-79
+216-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:213:25-76
+217
+218                <category android:name="android.intent.category.DEFAULT" />
+218-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+218-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+219            </intent-filter>
+220        </activity>
+221        <activity
+221-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:218:9-228:20
+222            android:name="org.geometerplus.android.fbreader.CancelActivity"
+222-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:219:13-76
+223            android:configChanges="orientation|keyboardHidden|screenSize"
+223-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:220:13-74
+224            android:exported="false"
+224-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:221:13-37
+225            android:theme="@style/FBReader.Dialog" >
+225-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:222:13-51
+226            <intent-filter>
+226-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:223:13-227:29
+227                <action android:name="android.fbreader.action.CANCEL_MENU" />
+227-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:224:17-78
+227-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:224:25-75
+228
+229                <category android:name="android.intent.category.DEFAULT" />
+229-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+229-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+230            </intent-filter>
+231        </activity>
+232        <activity
+232-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:229:9-233:54
+233            android:name="org.geometerplus.android.fbreader.PluginListActivity"
+233-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:230:13-80
+234            android:configChanges="orientation|keyboardHidden|screenSize"
+234-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:231:13-74
+235            android:exported="false"
+235-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:232:13-37
+236            android:theme="@style/FBReader.Dialog" />
+236-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:233:13-51
+237        <activity
+237-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:234:9-254:20
+238            android:name="org.geometerplus.android.fbreader.bookmark.BookmarksActivity"
+238-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:235:13-88
+239            android:configChanges="orientation|keyboardHidden|screenSize"
+239-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:236:13-74
+240            android:exported="false"
+240-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:237:13-37
+241            android:launchMode="singleTask"
+241-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:238:13-44
+242            android:process=":bookmarks"
+242-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:239:13-41
+243            android:theme="@style/FBReader.Activity.NoActionBar" >
+243-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:240:13-65
+244            <intent-filter>
+244-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:199:13-201:29
+245                <action android:name="android.intent.action.SEARCH" />
+245-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:200:17-71
+245-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:200:25-68
+246            </intent-filter>
+247
+248            <meta-data
+248-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:203:13-205:54
+249                android:name="android.app.searchable"
+249-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:204:17-54
+250                android:resource="@xml/searchable" />
+250-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:205:17-51
+251
+252            <intent-filter>
+252-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:249:13-253:29
+253                <action android:name="android.fbreader.action.BOOKMARKS" />
+253-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:250:17-76
+253-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:250:25-73
+254
+255                <category android:name="android.intent.category.DEFAULT" />
+255-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+255-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+256            </intent-filter>
+257        </activity>
+258        <activity
+258-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:255:9-265:20
+259            android:name="org.geometerplus.android.fbreader.bookmark.EditBookmarkActivity"
+259-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:256:13-91
+260            android:configChanges="orientation|keyboardHidden|screenSize"
+260-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:257:13-74
+261            android:exported="false"
+261-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:258:13-37
+262            android:theme="@style/FBReader.Dialog" >
+262-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:259:13-51
+263            <intent-filter>
+263-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:260:13-264:29
+264                <action android:name="android.fbreader.action.EDIT_BOOKMARK" />
+264-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:261:17-80
+264-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:261:25-77
+265
+266                <category android:name="android.intent.category.DEFAULT" />
+266-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+266-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+267            </intent-filter>
+268        </activity>
+269        <activity
+269-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:266:9-276:20
+270            android:name="org.geometerplus.android.fbreader.bookmark.EditStyleActivity"
+270-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:267:13-88
+271            android:configChanges="orientation|keyboardHidden|screenSize"
+271-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:268:13-74
+272            android:exported="false"
+272-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:269:13-37
+273            android:theme="@style/FBReader.Dialog" >
+273-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:270:13-51
+274            <intent-filter>
+274-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:271:13-275:29
+275                <action android:name="android.fbreader.action.EDIT_STYLES" />
+275-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:272:17-78
+275-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:272:25-75
+276
+277                <category android:name="android.intent.category.DEFAULT" />
+277-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+277-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+278            </intent-filter>
+279        </activity>
+280        <activity
+280-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:277:9-282:56
+281            android:name="org.geometerplus.android.fbreader.image.ImageViewActivity"
+281-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:278:13-85
+282            android:configChanges="orientation|keyboardHidden|screenSize"
+282-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:279:13-74
+283            android:exported="false"
+283-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:280:13-37
+284            android:process=":imageView"
+284-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:281:13-41
+285            android:theme="@style/FBReader.Activity" />
+285-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:282:13-53
+286
+287        <service
+287-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:284:9-292:19
+288            android:name="org.geometerplus.android.fbreader.libraryService.LibraryService"
+288-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:285:13-91
+289            android:exported="false"
+289-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:286:13-37
+290            android:launchMode="singleTask"
+290-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:287:13-44
+291            android:process=":libraryService" >
+291-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:288:13-46
+292            <intent-filter>
+292-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:289:13-291:29
+293                <action android:name="android.fbreader.action.LIBRARY_SERVICE" />
+293-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:290:17-82
+293-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:290:25-79
+294            </intent-filter>
+295        </service>
+296        <service
+296-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:293:9-301:19
+297            android:name="org.geometerplus.android.fbreader.config.ConfigService"
+297-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:294:13-82
+298            android:exported="false"
+298-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:295:13-37
+299            android:launchMode="singleTask"
+299-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:296:13-44
+300            android:process=":configService" >
+300-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:297:13-45
+301            <intent-filter>
+301-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:298:13-300:29
+302                <action android:name="android.fbreader.action.CONFIG_SERVICE" />
+302-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:299:17-81
+302-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:299:25-78
+303            </intent-filter>
+304        </service>
+305        <!--
+306service android:name="org.geometerplus.android.fbreader.sync.SyncService" android:launchMode="singleTask" android:process=":networkLibrary">
+307            <intent-filter>
+308                <action android:name="android.fbreader.action.sync.START"/>
+309            </intent-filter>
+310            <intent-filter>
+311                <action android:name="android.fbreader.action.sync.QUICK_SYNC"/>
+312            </intent-filter>
+313        </service
+314        -->
+315        <activity
+315-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:312:9-323:20
+316            android:name="org.geometerplus.android.fbreader.library.BookInfoActivity"
+316-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:313:13-86
+317            android:configChanges="orientation|keyboardHidden|screenSize"
+317-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:314:13-74
+318            android:exported="false"
+318-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:315:13-37
+319            android:process=":library"
+319-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:316:13-39
+320            android:theme="@style/FBReader.Activity" >
+320-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:317:13-53
+321            <intent-filter>
+321-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:318:13-322:29
+322                <action android:name="android.fbreader.action.BOOK_INFO" />
+322-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:319:17-76
+322-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:319:25-73
+323
+324                <category android:name="android.intent.category.DEFAULT" />
+324-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+324-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+325            </intent-filter>
+326        </activity>
+327        <activity
+327-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:324:9-341:20
+328            android:name="org.geometerplus.android.fbreader.library.LibrarySearchActivity"
+328-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:325:13-91
+329            android:exported="false"
+329-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:326:13-37
+330            android:process=":library"
+330-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:327:13-39
+331            android:theme="@android:style/Theme.NoDisplay" >
+331-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:328:13-59
+332
+333            <!-- android:exported="false" maybe needed for google search??? -->
+334            <intent-filter>
+334-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:199:13-201:29
+335                <action android:name="android.intent.action.SEARCH" />
+335-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:200:17-71
+335-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:200:25-68
+336            </intent-filter>
+337            <intent-filter>
+337-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:334:13-336:29
+338                <action android:name="android.fbreader.action.LOCAL_SEARCH_VIEW" />
+338-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:335:17-84
+338-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:335:25-81
+339            </intent-filter>
+340
+341            <meta-data
+341-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:203:13-205:54
+342                android:name="android.app.searchable"
+342-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:204:17-54
+343                android:resource="@xml/searchable_for_local_library_activity" />
+343-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:205:17-51
+344        </activity>
+345        <activity
+345-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:342:9-357:20
+346            android:name="org.nicolae.test.LocalLibrarySearchActivity"
+346-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:343:13-71
+347            android:exported="false"
+347-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:344:13-37
+348            android:process=":library"
+348-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:345:13-39
+349            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+349-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:346:13-72
+350            <intent-filter>
+350-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:334:13-336:29
+351                <action android:name="android.fbreader.action.LOCAL_SEARCH_VIEW" />
+351-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:335:17-84
+351-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:335:25-81
+352            </intent-filter>
+353            <intent-filter>
+353-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:199:13-201:29
+354                <action android:name="android.intent.action.SEARCH" />
+354-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:200:17-71
+354-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:200:25-68
+355            </intent-filter>
+356
+357            <meta-data
+357-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:203:13-205:54
+358                android:name="android.app.searchable"
+358-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:204:17-54
+359                android:resource="@xml/searchable_for_local_library_activity" />
+359-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:205:17-51
+360        </activity>
+361        <activity
+361-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:358:9-374:20
+362            android:name="org.geometerplus.android.fbreader.library.LibraryActivity"
+362-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:359:13-85
+363            android:configChanges="orientation|keyboardHidden|screenSize"
+363-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:360:13-74
+364            android:exported="false"
+364-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:361:13-37
+365            android:launchMode="singleTask"
+365-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:362:13-44
+366            android:process=":library"
+366-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:363:13-39
+367            android:theme="@style/FBReader.Activity" >
+367-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:364:13-53
+368            <meta-data
+368-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:365:13-367:99
+369                android:name="android.app.default_searchable"
+369-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:366:17-62
+370                android:value="org.geometerplus.android.fbreader.library.LibrarySearchActivity" />
+370-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:367:17-96
+371
+372            <intent-filter>
+372-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:369:13-373:29
+373                <action android:name="android.fbreader.action.LIBRARY" />
+373-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:370:17-74
+373-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:370:25-71
+374
+375                <category android:name="android.intent.category.DEFAULT" />
+375-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+375-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+376            </intent-filter>
+377        </activity>
+378        <activity
+378-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:375:9-379:56
+379            android:name="org.geometerplus.android.fbreader.TOCActivity"
+379-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:376:13-73
+380            android:configChanges="orientation|keyboardHidden|screenSize"
+380-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:377:13-74
+381            android:exported="false"
+381-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:378:13-37
+382            android:theme="@style/FBReader.Activity" />
+382-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:379:13-53
+383        <activity
+383-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:380:9-398:20
+384            android:name="org.geometerplus.android.fbreader.preferences.PreferenceActivity"
+384-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:381:13-92
+385            android:configChanges="orientation|keyboardHidden|screenSize"
+385-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:382:13-74
+386            android:exported="true"
+386-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:383:13-36
+387            android:process=":networkLibrary"
+387-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:384:13-46
+388            android:theme="@style/FBReader.Activity" >
+388-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:385:13-53
+389            <intent-filter>
+389-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:386:13-392:29
+390                <action android:name="android.intent.action.VIEW" />
+390-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:121:17-69
+390-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:121:25-66
+391
+392                <category android:name="android.intent.category.DEFAULT" />
+392-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+392-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+393
+394                <data android:scheme="fbreader-preferences" />
+394-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:17-63
+394-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:23-60
+395            </intent-filter>
+396            <intent-filter>
+396-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:393:13-397:29
+397                <action android:name="android.fbreader.action.PREFERENCES" />
+397-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:394:17-78
+397-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:394:25-75
+398
+399                <category android:name="android.intent.category.DEFAULT" />
+399-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+399-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+400            </intent-filter>
+401        </activity>
+402        <activity
+402-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:399:9-404:56
+403            android:name="org.geometerplus.android.fbreader.preferences.EditBookInfoActivity"
+403-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:400:13-94
+404            android:configChanges="orientation|keyboardHidden|screenSize"
+404-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:401:13-74
+405            android:exported="false"
+405-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:402:13-37
+406            android:process=":library"
+406-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:403:13-39
+407            android:theme="@style/FBReader.Activity" /> <!-- activity android:name="org.geometerplus.android.fbreader.sync.MissingBookActivity" android:process=":networkLibrary" android:theme="@style/FBReader.Dialog" android:configChanges="orientation|keyboardHidden|screenSize"/ -->
+407-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:404:13-53
+408        <!--
+409 (by aplicatii.romanesti)activity android:name="org.geometerplus.android.fbreader.network.BookDownloader" android:process=":networkLibrary" android:theme="@android:style/Theme.NoDisplay">
+410            <intent-filter>
+411                <action android:name="android.intent.action.VIEW"/>
+412                <category android:name="android.intent.category.DEFAULT"/>
+413                <category android:name="android.intent.category.BROWSABLE"/>
+414                <data android:host="*" android:scheme="http"/>
+415                <data android:pathPattern=".*\\.epub"/>
+416                <data android:pathPattern=".*\\.oeb"/>
+417                <data android:pathPattern=".*\\.fb2"/>
+418                <data android:pathPattern=".*\\.fb2\\.zip"/>
+419                <data android:pathPattern=".*\\.mobi"/>
+420                <data android:pathPattern=".*\\.prc"/>
+421                <data android:pathPattern=".*\\.txt"/>
+422                <data android:pathPattern=".*\\.rtf"/>
+423                <data android:pathPattern=".*\\.djvu"/>
+424                <data android:pathPattern=".*\\.cbr"/>
+425                <data android:pathPattern=".*\\.cbz"/>
+426            </intent-filter>
+427            <intent-filter>
+428                <action android:name="android.intent.action.VIEW"/>
+429                <category android:name="android.intent.category.DEFAULT"/>
+430                <category android:name="android.intent.category.BROWSABLE"/>
+431                <data android:host="*" android:scheme="http"/>
+432                <data android:mimeType="application/epub+zip"/>
+433                <data android:mimeType="application/x-pilot-prc"/>
+434                <data android:mimeType="application/x-mobipocket-ebook"/>
+435                <data android:mimeType="application/x-fictionbook+xml"/>
+436                <data android:mimeType="application/x-fictionbook"/>
+437                <data android:mimeType="application/djvu"/>
+438                <data android:mimeType="application/x-djvu"/>
+439                <data android:mimeType="application/x-cbr"/>
+440                <data android:mimeType="application/x-cbz"/>
+441                <data android:mimeType="image/vnd.djvu"/>
+442                <data android:mimeType="image/x-djvu"/>
+443            </intent-filter>
+444            <intent-filter>
+445                <action android:name="android.intent.action.VIEW"/>
+446                <category android:name="android.intent.category.DEFAULT"/>
+447                <category android:name="android.intent.category.BROWSABLE"/>
+448                <data android:host="*rus.ec" android:mimeType="application/zip" android:scheme="http"/>
+449                <data android:host="lib.ololo.cc" android:mimeType="application/zip" android:scheme="http"/>
+450            </intent-filter>
+451            <intent-filter>
+452                <action android:name="android.intent.action.VIEW"/>
+453                <category android:name="android.intent.category.DEFAULT"/>
+454                <category android:name="android.intent.category.BROWSABLE"/>
+455                <data android:host="*" android:scheme="book"/>
+456            </intent-filter>
+457            <intent-filter>
+458                <action android:name="android.intent.action.VIEW"/>
+459                <category android:name="android.intent.category.DEFAULT"/>
+460                <category android:name="android.intent.category.BROWSABLE"/>
+461                <data android:host="*" android:scheme="epub"/>
+462            </intent-filter>
+463        </activity>
+464        <service android:name="org.geometerplus.android.fbreader.network.BookDownloaderService" android:launchMode="singleTask" android:process=":networkLibrary" android:exported="false"/>
+465        <activity android:name="org.geometerplus.android.fbreader.network.NetworkSearchActivity" android:process=":networkLibrary" android:theme="@android:style/Theme.NoDisplay">
+466            <intent-filter>
+467                <action android:name="android.intent.action.SEARCH"/>
+468            </intent-filter>
+469            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+470        </activity>
+471        <activity
+472            android:name="org.geometerplus.android.fbreader.network.auth.TokenAuthActivity"
+473            android:process=":networkLibrary"
+474            android:theme="@android:style/Theme.NoDisplay"
+475            android:launchMode="singleTask"
+476        >
+477            <intent-filter>
+478                <action android:name="fbreader.network.AUTH"/>
+479                <data android:host="*" android:scheme="fbreader-network-auth"/>
+480                <category android:name="android.intent.category.DEFAULT"/>
+481                <category android:name="android.intent.category.BROWSABLE"/>
+482            </intent-filter>
+483        </activity>
+484        <activity android:name="org.geometerplus.android.fbreader.network.NetworkLibraryPrimaryActivity" android:process=":networkLibrary" android:launchMode="singleTask" android:theme="@style/FBReader.Activity" android:configChanges="orientation|keyboardHidden|screenSize">
+485            <meta-data android:name="android.app.default_searchable" android:value="org.geometerplus.android.fbreader.network.NetworkSearchActivity"/>
+486            <intent-filter>
+487                <action android:name="android.fbreader.action.OPEN_NETWORK_CATALOG"/>
+488                <category android:name="android.intent.category.DEFAULT"/>
+489                <data android:host="*" android:scheme="http"/>
+490                <data android:host="*" android:scheme="https"/>
+491            </intent-filter>
+492            <intent-filter>
+493                <action android:name="android.fbreader.action.NETWORK_LIBRARY"/>
+494                <category android:name="android.intent.category.DEFAULT"/>
+495            </intent-filter>
+496        </activity>
+497        <activity android:name="org.geometerplus.android.fbreader.network.NetworkLibrarySecondaryActivity" android:process=":networkLibrary" android:theme="@style/FBReader.Activity" android:configChanges="orientation|keyboardHidden|screenSize"/>
+498        <activity android:name="org.geometerplus.android.fbreader.network.AuthenticationActivity" android:process=":networkLibrary" android:theme="@style/FBReader.Dialog" android:configChanges="orientation|keyboardHidden|screenSize"/>
+499        <activity android:name="org.geometerplus.android.fbreader.network.BuyBooksActivity" android:process=":networkLibrary" android:theme="@style/FBReader.Dialog" android:configChanges="orientation|keyboardHidden|screenSize"/>
+500        <activity android:name="org.geometerplus.android.fbreader.network.AddCatalogMenuActivity" android:process=":networkLibrary" android:theme="@style/FBReader.Dialog" android:configChanges="orientation|keyboardHidden|screenSize"/>
+501        <activity android:name="org.geometerplus.android.fbreader.network.AddCustomCatalogActivity" android:process=":networkLibrary" android:theme="@style/FBReader.Dialog" android:configChanges="orientation|keyboardHidden|screenSize">
+502            <intent-filter>
+503                <action android:name="android.fbreader.action.ADD_OPDS_CATALOG"/>
+504                <category android:name="android.intent.category.DEFAULT"/>
+505                <data android:host="data.fbreader.org" android:scheme="http" android:path="/add_catalog/editUrl"/>
+506            </intent-filter>
+507            <intent-filter>
+508                <action android:name="android.intent.action.VIEW"/>
+509                <category android:name="android.intent.category.DEFAULT"/>
+510                <category android:name="android.intent.category.BROWSABLE"/>
+511                <data android:host="*" android:scheme="opds"/>
+512            </intent-filter>
+513            <intent-filter>
+514                <action android:name="android.fbreader.action.ADD_OPDS_CATALOG_URL"/>
+515                <category android:name="android.intent.category.DEFAULT"/>
+516                <data android:host="*" android:scheme="http"/>
+517            </intent-filter>
+518            <intent-filter>
+519                <action android:name="android.fbreader.action.ADD_OPDS_CATALOG_URL"/>
+520                <category android:name="android.intent.category.DEFAULT"/>
+521                <data android:host="*" android:scheme="https"/>
+522            </intent-filter>
+523        </activity>
+524        <activity android:name="org.geometerplus.android.fbreader.network.AuthorisationMenuActivity" android:process=":networkLibrary" android:theme="@style/FBReader.Dialog" android:configChanges="orientation|keyboardHidden|screenSize"/>
+525        <activity android:name="org.geometerplus.android.fbreader.network.litres.UserRegistrationActivity" android:process=":networkLibrary" android:theme="@style/FBReader.Dialog" android:configChanges="orientation|keyboardHidden|screenSize"/>
+526        <activity android:name="org.geometerplus.android.fbreader.network.litres.AutoRegistrationActivity" android:process=":networkLibrary" android:theme="@style/FBReader.Dialog" android:configChanges="orientation|keyboardHidden|screenSize"/>
+527        <activity android:name="org.geometerplus.android.fbreader.network.TopupMenuActivity" android:process=":networkLibrary" android:theme="@style/FBReader.Dialog" android:configChanges="orientation|keyboardHidden|screenSize"/>
+528        <activity android:name="org.geometerplus.android.fbreader.network.NetworkBookInfoActivity" android:process=":networkLibrary" android:theme="@style/FBReader.Activity" android:configChanges="orientation|keyboardHidden|screenSize">
+529            <intent-filter>
+530                <action android:name="android.intent.action.VIEW"/>
+531                <category android:name="android.intent.category.DEFAULT"/>
+532                <data android:host="*" android:scheme="litres-book"/>
+533            </intent-filter>
+534        </activity>
+535        <activity android:name="org.geometerplus.android.fbreader.network.CatalogManagerActivity" android:process=":networkLibrary" android:theme="@style/FBReader.Activity"/>
+536        <receiver android:name="org.geometerplus.android.fbreader.network.ListenerCallback" android:process=":networkLibrary">
+537            <intent-filter>
+538                <action android:name="android.fbreader.action.network.SIGNIN"/>
+539                <category android:name="android.intent.category.DEFAULT"/>
+540            </intent-filter>
+541        </receiver>
+542        <activity android:name="org.geometerplus.android.fbreader.tips.TipsActivity" android:theme="@style/FBReader.Dialog" android:configChanges="orientation|keyboardHidden|screenSize"/>
+543        <activity android:name="com.paragon.dictionary.fbreader.OpenDictionaryActivity" android:theme="@style/FBReader.Transparent" android:configChanges="orientation|keyboardHidden|screenSize"/>
+544        <service android:name="org.geometerplus.android.fbreader.httpd.DataService" android:launchMode="singleTask" android:process=":dataService" android:exported="false"/
+545        -->
+546        <service
+546-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:543:9-545:40
+547            android:name="group.pals.android.lib.ui.filechooser.services.LocalFileProvider"
+547-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:544:13-92
+548            android:exported="false" />
+548-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:545:13-37
+549
+550        <activity
+550-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:547:9-551:54
+551            android:name="group.pals.android.lib.ui.filechooser.FileChooserActivity"
+551-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:548:13-85
+552            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+552-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:549:13-83
+553            android:exported="false"
+553-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:550:13-37
+554            android:theme="@style/FBReader.Dialog" />
+554-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:551:13-51
+555        <activity
+555-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:552:9-556:54
+556            android:name="org.geometerplus.android.fbreader.preferences.background.Chooser"
+556-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:553:13-92
+557            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+557-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:554:13-83
+558            android:exported="false"
+558-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:555:13-37
+559            android:theme="@style/FBReader.Dialog" />
+559-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:556:13-51
+560        <activity
+560-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:557:9-561:54
+561            android:name="org.geometerplus.android.fbreader.preferences.background.PredefinedImages"
+561-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:558:13-101
+562            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+562-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:559:13-83
+563            android:exported="false"
+563-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:560:13-37
+564            android:theme="@style/FBReader.Dialog" />
+564-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:561:13-51
+565        <activity
+565-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:562:9-566:54
+566            android:name="org.geometerplus.android.util.FolderListDialogActivity"
+566-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:563:13-82
+567            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+567-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:564:13-83
+568            android:exported="false"
+568-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:565:13-37
+569            android:theme="@style/FBReader.Dialog" />
+569-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:566:13-51
+570        <activity
+570-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:567:9-571:54
+571            android:name="org.geometerplus.android.util.EditTagsDialogActivity"
+571-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:568:13-80
+572            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+572-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:569:13-83
+573            android:exported="false"
+573-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:570:13-37
+574            android:theme="@style/FBReader.Dialog" />
+574-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:571:13-51
+575        <activity
+575-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:572:9-576:54
+576            android:name="org.geometerplus.android.util.EditAuthorsDialogActivity"
+576-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:573:13-83
+577            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+577-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:574:13-83
+578            android:exported="false"
+578-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:575:13-37
+579            android:theme="@style/FBReader.Dialog" />
+579-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:576:13-51
+580
+581        <provider
+581-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:578:9-581:40
+582            android:name="org.nicolae.test.BookSearchHintProvider"
+582-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:579:13-67
+583            android:authorities="org.nicolae.test.BookSearchHintProvider"
+583-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:580:13-74
+584            android:exported="false" />
+584-->C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:581:13-37
+585    </application>
+586
+587</manifest>

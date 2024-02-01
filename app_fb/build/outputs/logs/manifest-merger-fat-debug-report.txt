@@ -1,0 +1,503 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:2:1-584:12
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:2:1-584:12
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:2:1-584:12
+	package
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:3:5-71
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:4:5-35
+supports-screens
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:7:5-12:40
+	android:largeScreens
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:9:9-36
+	android:smallScreens
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:11:9-36
+	android:normalScreens
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:10:9-37
+	android:xlargeScreens
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:12:9-37
+	android:anyDensity
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:8:9-34
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:15:9-52
+application
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:18:5-582:19
+	android:label
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:20:9-41
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:19:9-77
+uses-library#org.apache.http.legacy
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:22:9-24:40
+	android:required
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:24:13-37
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:23:13-50
+activity#org.geometerplus.android.fbreader.error.BookReadingErrorActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:26:9-39:20
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:30:13-37
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:29:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:28:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:31:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:27:13-92
+intent-filter#action:name:android.fbreader.action.ERROR+category:name:android.intent.category.DEFAULT+data:scheme:BookReadingException
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:32:13-38:29
+action#android.fbreader.action.ERROR
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:33:17-72
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:33:25-69
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:17-76
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:35:27-73
+data
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:17-63
+	android:scheme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:37:23-60
+activity#org.geometerplus.android.fbreader.crash.FixBooksDirectoryActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:40:9-53:20
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:44:13-37
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:43:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:42:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:45:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:41:13-93
+intent-filter#action:name:android.fbreader.action.CRASH+category:name:android.intent.category.DEFAULT+data:scheme:CachedCharStorageException
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:46:13-52:29
+action#android.fbreader.action.CRASH
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:47:17-72
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:47:25-69
+activity#org.geometerplus.android.fbreader.crash.MissingNativeLibraryActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:54:9-74:20
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:58:13-37
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:57:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:56:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:59:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:55:13-96
+intent-filter#action:name:android.fbreader.action.CRASH+category:name:android.intent.category.DEFAULT+data:scheme:ExceptionInInitializerError
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:60:13-66:29
+intent-filter#action:name:android.fbreader.action.CRASH+category:name:android.intent.category.DEFAULT+data:scheme:UnsatisfiedLinkError
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:67:13-73:29
+service#org.geometerplus.android.fbreader.api.ApiService
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:76:9-85:19
+	android:launchMode
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:79:13-44
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:78:13-37
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:77:13-76
+intent-filter#action:name:android.fbreader.action.API+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:80:13-84:29
+action#android.fbreader.action.API
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:81:17-70
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:81:25-67
+activity#org.geometerplus.android.fbreader.FBReader
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:87:9-217:20
+	android:label
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:92:13-45
+	android:launchMode
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:93:13-44
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:90:13-36
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:89:13-74
+	android:icon
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:91:13-46
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:94:13-53
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:88:13-70
+intent-filter#action:name:android.fbreader.action.VIEW+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:101:13-105:29
+action#android.fbreader.action.VIEW
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:102:17-71
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:102:25-68
+intent-filter#action:name:anvdroid.fbreader.action.LOCAL_SEARCH_RESULT_VIEW+category:name:android.intent.category.DEFAULT+data:scheme:local-search-result
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:106:13-112:29
+action#anvdroid.fbreader.action.LOCAL_SEARCH_RESULT_VIEW
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:107:17-92
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:107:25-89
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:scheme:fbreader-action
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:120:13-126:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:121:17-69
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:121:25-66
+intent-filter#action:name:android.fbreader.action.PLUGIN+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:127:13-131:29
+action#android.fbreader.action.PLUGIN
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:128:17-73
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:128:25-70
+intent-filter#action:name:android.intent.action.SEARCH
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:199:13-201:29
+action#android.intent.action.SEARCH
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:200:17-71
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:200:25-68
+meta-data#android.app.searchable
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:203:13-205:54
+	android:resource
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:205:17-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:204:17-54
+intent-filter#action:name:android.fbreader.action.CLOSE+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:207:13-211:29
+action#android.fbreader.action.CLOSE
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:208:17-72
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:208:25-69
+intent-filter#action:name:android.fbreader.action.PLUGIN_CRASH+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:212:13-216:29
+action#android.fbreader.action.PLUGIN_CRASH
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:213:17-79
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:213:25-76
+activity#org.geometerplus.android.fbreader.CancelActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:218:9-228:20
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:221:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:220:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:222:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:219:13-76
+intent-filter#action:name:android.fbreader.action.CANCEL_MENU+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:223:13-227:29
+action#android.fbreader.action.CANCEL_MENU
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:224:17-78
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:224:25-75
+activity#org.geometerplus.android.fbreader.PluginListActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:229:9-233:54
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:232:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:231:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:233:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:230:13-80
+activity#org.geometerplus.android.fbreader.bookmark.BookmarksActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:234:9-254:20
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:239:13-41
+	android:launchMode
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:238:13-44
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:237:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:236:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:240:13-65
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:235:13-88
+intent-filter#action:name:android.fbreader.action.BOOKMARKS+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:249:13-253:29
+action#android.fbreader.action.BOOKMARKS
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:250:17-76
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:250:25-73
+activity#org.geometerplus.android.fbreader.bookmark.EditBookmarkActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:255:9-265:20
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:258:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:257:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:259:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:256:13-91
+intent-filter#action:name:android.fbreader.action.EDIT_BOOKMARK+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:260:13-264:29
+action#android.fbreader.action.EDIT_BOOKMARK
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:261:17-80
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:261:25-77
+activity#org.geometerplus.android.fbreader.bookmark.EditStyleActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:266:9-276:20
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:269:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:268:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:270:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:267:13-88
+intent-filter#action:name:android.fbreader.action.EDIT_STYLES+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:271:13-275:29
+action#android.fbreader.action.EDIT_STYLES
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:272:17-78
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:272:25-75
+activity#org.geometerplus.android.fbreader.image.ImageViewActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:277:9-282:56
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:281:13-41
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:280:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:279:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:282:13-53
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:278:13-85
+service#org.geometerplus.android.fbreader.libraryService.LibraryService
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:284:9-292:19
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:288:13-46
+	android:launchMode
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:287:13-44
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:286:13-37
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:285:13-91
+intent-filter#action:name:android.fbreader.action.LIBRARY_SERVICE
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:289:13-291:29
+action#android.fbreader.action.LIBRARY_SERVICE
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:290:17-82
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:290:25-79
+service#org.geometerplus.android.fbreader.config.ConfigService
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:293:9-301:19
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:297:13-45
+	android:launchMode
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:296:13-44
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:295:13-37
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:294:13-82
+intent-filter#action:name:android.fbreader.action.CONFIG_SERVICE
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:298:13-300:29
+action#android.fbreader.action.CONFIG_SERVICE
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:299:17-81
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:299:25-78
+activity#org.geometerplus.android.fbreader.library.BookInfoActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:312:9-323:20
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:316:13-39
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:315:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:314:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:317:13-53
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:313:13-86
+intent-filter#action:name:android.fbreader.action.BOOK_INFO+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:318:13-322:29
+action#android.fbreader.action.BOOK_INFO
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:319:17-76
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:319:25-73
+activity#org.geometerplus.android.fbreader.library.LibrarySearchActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:324:9-341:20
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:327:13-39
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:326:13-37
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:328:13-59
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:325:13-91
+intent-filter#action:name:android.fbreader.action.LOCAL_SEARCH_VIEW
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:334:13-336:29
+action#android.fbreader.action.LOCAL_SEARCH_VIEW
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:335:17-84
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:335:25-81
+activity#org.nicolae.test.LocalLibrarySearchActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:342:9-357:20
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:345:13-39
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:344:13-37
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:346:13-72
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:343:13-71
+activity#org.geometerplus.android.fbreader.library.LibraryActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:358:9-374:20
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:363:13-39
+	android:launchMode
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:362:13-44
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:361:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:360:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:364:13-53
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:359:13-85
+meta-data#android.app.default_searchable
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:365:13-367:99
+	android:value
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:367:17-96
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:366:17-62
+intent-filter#action:name:android.fbreader.action.LIBRARY+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:369:13-373:29
+action#android.fbreader.action.LIBRARY
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:370:17-74
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:370:25-71
+activity#org.geometerplus.android.fbreader.TOCActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:375:9-379:56
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:378:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:377:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:379:13-53
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:376:13-73
+activity#org.geometerplus.android.fbreader.preferences.PreferenceActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:380:9-398:20
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:384:13-46
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:383:13-36
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:382:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:385:13-53
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:381:13-92
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:scheme:fbreader-preferences
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:386:13-392:29
+intent-filter#action:name:android.fbreader.action.PREFERENCES+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:393:13-397:29
+action#android.fbreader.action.PREFERENCES
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:394:17-78
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:394:25-75
+activity#org.geometerplus.android.fbreader.preferences.EditBookInfoActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:399:9-404:56
+	android:process
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:403:13-39
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:402:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:401:13-74
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:404:13-53
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:400:13-94
+service#group.pals.android.lib.ui.filechooser.services.LocalFileProvider
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:543:9-545:40
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:545:13-37
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:544:13-92
+activity#group.pals.android.lib.ui.filechooser.FileChooserActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:547:9-551:54
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:550:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:549:13-83
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:551:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:548:13-85
+activity#org.geometerplus.android.fbreader.preferences.background.Chooser
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:552:9-556:54
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:555:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:554:13-83
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:556:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:553:13-92
+activity#org.geometerplus.android.fbreader.preferences.background.PredefinedImages
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:557:9-561:54
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:560:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:559:13-83
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:561:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:558:13-101
+activity#org.geometerplus.android.util.FolderListDialogActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:562:9-566:54
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:565:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:564:13-83
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:566:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:563:13-82
+activity#org.geometerplus.android.util.EditTagsDialogActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:567:9-571:54
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:570:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:569:13-83
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:571:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:568:13-80
+activity#org.geometerplus.android.util.EditAuthorsDialogActivity
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:572:9-576:54
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:575:13-37
+	android:configChanges
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:574:13-83
+	android:theme
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:576:13-51
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:573:13-83
+provider#org.nicolae.test.BookSearchHintProvider
+ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:578:9-581:40
+	android:authorities
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:580:13-74
+	android:exported
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:581:13-37
+	android:name
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml:579:13-67
+uses-sdk
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml
+INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml
+		ADDED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\it\Desktop\F_Source\demo_fb_app\app_fb\src\main\AndroidManifest.xml

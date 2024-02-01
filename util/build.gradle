@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+android {
+	compileSdkVersion project.ext.globalCompileSdkVersion
+	buildToolsVersion project.ext.globalBuildToolsVersion
+
+	lintOptions {
+		abortOnError false
+	}
+
+	sourceSets {
+		main.java.srcDirs = ['src/main/java']
+		main.res.srcDirs = ['src/main/res']
+		main.manifest.srcFile 'src/main/AndroidManifest.xml'
+	}
+
+	defaultConfig {
+		minSdkVersion project.ext.globalMinSdkVersion
+		//maxSdkVersion project.ext.globalMaxSdkVersion
+		targetSdkVersion project.ext.globalTargetSdkVersion
+		versionName "1.0"
+	}
+}

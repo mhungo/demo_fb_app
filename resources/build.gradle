@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+	api project(':common')
+}
+
+android {
+	compileSdkVersion project.ext.globalCompileSdkVersion
+	buildToolsVersion project.ext.globalBuildToolsVersion
+
+	lintOptions {
+		abortOnError false
+	}
+
+	// compileOptions { // see: https://github.com/geometer/fbreader-module-resources/blob/master/build.gradle
+	// 	sourceCompatibility JavaVersion.VERSION_1_7
+	// 	targetCompatibility JavaVersion.VERSION_1_7
+	// }
+
+	sourceSets {
+		main.java.srcDirs = ['src/main/java']
+		main.aidl.srcDirs = ['src/main/java']
+		main.res.srcDirs = ['src/main/res']
+		main.assets.srcDirs = ['src/main/assets']
+		main.manifest.srcFile 'src/main/AndroidManifest.xml'
+	}
+
+	defaultConfig {
+		minSdkVersion project.ext.globalMinSdkVersion
+		//maxSdkVersion project.ext.globalMaxSdkVersion
+		targetSdkVersion project.ext.globalTargetSdkVersion
+	}
+
+	buildTypes {
+		release {
+		}
+	}
+}

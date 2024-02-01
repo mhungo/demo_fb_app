@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+	implementation 'androidx.legacy:legacy-support-v4:1.0.0-beta01'
+}
+
+android {
+	compileSdkVersion project.ext.globalCompileSdkVersion
+	buildToolsVersion project.ext.globalBuildToolsVersion
+
+	lintOptions {
+		abortOnError false
+	}
+
+	sourceSets {
+		main.java.srcDirs = ['library/src']
+		main.res.srcDirs = ['library/res']
+		main.manifest.srcFile 'library/AndroidManifest.xml'
+	}
+
+	defaultConfig {
+		minSdkVersion project.ext.globalMinSdkVersion
+		//maxSdkVersion project.ext.globalMaxSdkVersion
+		targetSdkVersion project.ext.globalTargetSdkVersion
+	}
+}

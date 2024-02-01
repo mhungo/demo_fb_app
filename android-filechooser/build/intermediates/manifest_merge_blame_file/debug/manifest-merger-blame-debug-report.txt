@@ -1,0 +1,14 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3    Copyright (c) 2012 Hai Bison
+4
+5    See the file LICENSE at the root directory of this project for copying
+6    permission.
+7-->
+8<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+9    package="group.pals.android.lib.ui.filechooser" >
+10
+11    <uses-sdk android:minSdkVersion="24" />
+11-->C:\Users\it\Desktop\F_Source\demo_fb_app\android-filechooser\code\AndroidManifest.xml
+12
+13</manifest>
